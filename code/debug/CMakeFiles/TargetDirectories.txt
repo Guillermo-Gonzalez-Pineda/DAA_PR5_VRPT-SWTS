@@ -1,0 +1,3 @@
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/rebuild_cache.dir
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/edit_cache.dir
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir
