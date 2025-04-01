@@ -20,9 +20,8 @@ void printRoute(const std::vector<std::shared_ptr<Location>>& route) {
         } else {
             locationType = "Zone" + std::to_string(id);
         }
-        std::cout << locationType << " (" << location->getX() << ", " << location->getY() << ") -> ";
+        std::cout << "\t" << locationType << " (" << location->getX() << ", " << location->getY() << ")" << std::endl;
     }
-    std::cout << "FIN" << std::endl;
 }
 
 int main(int argc, char* argv[]) {
@@ -59,7 +58,7 @@ int main(int argc, char* argv[]) {
         // Mostrar los resultados de recolección voraz
         std::cout << "=== Recolección (Voraz) ===" << std::endl;
         for (const auto& vehicle : collectionVehiclesGreedy) {
-            std::cout << "Vehículo de recolección " << vehicle.getId() << " - Ruta: ";
+            std::cout << "Vehículo " << vehicle.getId() << ":" << std::endl;
             printRoute(vehicle.getRoute());
         }
 
@@ -72,7 +71,7 @@ int main(int argc, char* argv[]) {
         // Mostrar los resultados de transporte voraz
         std::cout << "\n=== Transporte (Voraz) ===" << std::endl;
         for (const auto& vehicle : transportVehiclesGreedy) {
-            std::cout << "Vehículo de transporte " << vehicle->getId() << " - Ruta: ";
+            std::cout << "Vehículo " << vehicle->getId() << ":" << std::endl;
             printRoute(vehicle->getRoute());
         }
 
@@ -86,7 +85,7 @@ int main(int argc, char* argv[]) {
         // Mostrar los resultados de recolección GRASP
         std::cout << "\n=== Recolección (GRASP) ===" << std::endl;
         for (const auto& vehicle : collectionVehiclesGRASP) {
-            std::cout << "Vehículo de recolección " << vehicle.getId() << " - Ruta: ";
+            std::cout << "Vehículo " << vehicle.getId() << ":" << std::endl;
             printRoute(vehicle.getRoute());
         }
 
@@ -96,7 +95,7 @@ int main(int argc, char* argv[]) {
         // Mostrar los resultados de transporte voraz con recolección GRASP
         std::cout << "\n=== Transporte (Voraz con Recolección GRASP) ===" << std::endl;
         for (const auto& vehicle : transportVehiclesGRASP) {
-            std::cout << "Vehículo de transporte " << vehicle->getId() << " - Ruta: ";
+            std::cout << "Vehículo " << vehicle->getId() << ":" << std::endl;
             printRoute(vehicle->getRoute());
         }
 
