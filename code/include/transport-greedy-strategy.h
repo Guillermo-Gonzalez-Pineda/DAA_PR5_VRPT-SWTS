@@ -14,7 +14,6 @@ class TransportGreedyStrategy {
 
     std::vector<TransportVehicle*> computeTransportRoutes(
         std::vector<CollectionVehicle>& collectionVehicles,
-        std::vector<std::shared_ptr<SWTS>>& transferStations,
         const std::shared_ptr<Location>& dumpsite,
         std::vector<std::vector<double>>& distances);
 
@@ -27,7 +26,6 @@ class TransportGreedyStrategy {
       const Task& task, 
       double thPrev, 
       const Location& lastSWTS, 
-      double travelTimeToSh,
       const std::vector<std::vector<double>>& distances);
 
 };

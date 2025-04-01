@@ -61,6 +61,7 @@ add_executable(RutaRecoleccion
     src/recolection-greedy-strategy.cpp
     src/transport-vehicle.cpp
     src/transport-greedy-strategy.cpp
+    src/recolection-grasp-strategy.cpp
     )
 
 # Add expected compiler features to a target.

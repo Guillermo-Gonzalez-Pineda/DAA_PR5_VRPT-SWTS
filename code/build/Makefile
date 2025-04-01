@@ -177,6 +177,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/recolection-grasp-strategy.o: src/recolection-grasp-strategy.cpp.o
+
+.PHONY : src/recolection-grasp-strategy.o
+
+# target to build an object file
+src/recolection-grasp-strategy.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o
+.PHONY : src/recolection-grasp-strategy.cpp.o
+
+src/recolection-grasp-strategy.i: src/recolection-grasp-strategy.cpp.i
+
+.PHONY : src/recolection-grasp-strategy.i
+
+# target to preprocess a source file
+src/recolection-grasp-strategy.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.i
+.PHONY : src/recolection-grasp-strategy.cpp.i
+
+src/recolection-grasp-strategy.s: src/recolection-grasp-strategy.cpp.s
+
+.PHONY : src/recolection-grasp-strategy.s
+
+# target to generate assembly for a file
+src/recolection-grasp-strategy.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s
+.PHONY : src/recolection-grasp-strategy.cpp.s
+
 src/recolection-greedy-strategy.o: src/recolection-greedy-strategy.cpp.o
 
 .PHONY : src/recolection-greedy-strategy.o
@@ -204,6 +231,60 @@ src/recolection-greedy-strategy.cpp.s:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s
 .PHONY : src/recolection-greedy-strategy.cpp.s
 
+src/transport-greedy-strategy.o: src/transport-greedy-strategy.cpp.o
+
+.PHONY : src/transport-greedy-strategy.o
+
+# target to build an object file
+src/transport-greedy-strategy.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o
+.PHONY : src/transport-greedy-strategy.cpp.o
+
+src/transport-greedy-strategy.i: src/transport-greedy-strategy.cpp.i
+
+.PHONY : src/transport-greedy-strategy.i
+
+# target to preprocess a source file
+src/transport-greedy-strategy.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.i
+.PHONY : src/transport-greedy-strategy.cpp.i
+
+src/transport-greedy-strategy.s: src/transport-greedy-strategy.cpp.s
+
+.PHONY : src/transport-greedy-strategy.s
+
+# target to generate assembly for a file
+src/transport-greedy-strategy.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.s
+.PHONY : src/transport-greedy-strategy.cpp.s
+
+src/transport-vehicle.o: src/transport-vehicle.cpp.o
+
+.PHONY : src/transport-vehicle.o
+
+# target to build an object file
+src/transport-vehicle.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o
+.PHONY : src/transport-vehicle.cpp.o
+
+src/transport-vehicle.i: src/transport-vehicle.cpp.i
+
+.PHONY : src/transport-vehicle.i
+
+# target to preprocess a source file
+src/transport-vehicle.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.i
+.PHONY : src/transport-vehicle.cpp.i
+
+src/transport-vehicle.s: src/transport-vehicle.cpp.s
+
+.PHONY : src/transport-vehicle.s
+
+# target to generate assembly for a file
+src/transport-vehicle.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.s
+.PHONY : src/transport-vehicle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +300,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/recolection-grasp-strategy.o"
+	@echo "... src/recolection-grasp-strategy.i"
+	@echo "... src/recolection-grasp-strategy.s"
 	@echo "... src/recolection-greedy-strategy.o"
 	@echo "... src/recolection-greedy-strategy.i"
 	@echo "... src/recolection-greedy-strategy.s"
+	@echo "... src/transport-greedy-strategy.o"
+	@echo "... src/transport-greedy-strategy.i"
+	@echo "... src/transport-greedy-strategy.s"
+	@echo "... src/transport-vehicle.o"
+	@echo "... src/transport-vehicle.i"
+	@echo "... src/transport-vehicle.s"
 .PHONY : help
 
 

@@ -96,11 +96,53 @@ CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-greedy-strategy.cpp -o CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s
 
+CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o: ../src/transport-vehicle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-vehicle.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-vehicle.cpp > CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-vehicle.cpp -o CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.s
+
+CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o: ../src/transport-greedy-strategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-greedy-strategy.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-greedy-strategy.cpp > CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-greedy-strategy.cpp -o CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.s
+
+CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o: ../src/recolection-grasp-strategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp > CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp -o CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s
+
 # Object files for target RutaRecoleccion
 RutaRecoleccion_OBJECTS = \
 "CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o" \
 "CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o" \
-"CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o"
+"CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o"
 
 # External object files for target RutaRecoleccion
 RutaRecoleccion_EXTERNAL_OBJECTS =
@@ -108,9 +150,12 @@ RutaRecoleccion_EXTERNAL_OBJECTS =
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/build.make
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable RutaRecoleccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RutaRecoleccion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RutaRecoleccion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

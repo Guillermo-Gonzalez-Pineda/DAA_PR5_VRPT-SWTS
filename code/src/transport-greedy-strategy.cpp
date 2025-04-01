@@ -5,7 +5,6 @@
 
 std::vector<TransportVehicle*> TransportGreedyStrategy::computeTransportRoutes(
     std::vector<CollectionVehicle>& collectionVehicles,
-    std::vector<std::shared_ptr<SWTS>>& transferStations,
     const std::shared_ptr<Location>& dumpsite,
     std::vector<std::vector<double>>& distances) {
   std::vector<TransportVehicle*> transportVehicles;  // Conjunto E de vehículos de transporte
@@ -33,7 +32,6 @@ std::vector<TransportVehicle*> TransportGreedyStrategy::computeTransportRoutes(
 
   double thPrev = 0;  // Inicialmente no hay tarea anterior
   std::shared_ptr<Location> lastSWTS = dumpsite;
-  double travelTimeToSh = 0;
 
   // 4. Procesar cada tarea
   while (!tasks.empty()) {
@@ -42,7 +40,7 @@ std::vector<TransportVehicle*> TransportGreedyStrategy::computeTransportRoutes(
 
     // 5. Buscar un vehículo de transporte adecuado
     TransportVehicle* selectedVehicle = ChooseVehicle(
-        transportVehicles, currentTask, thPrev, *lastSWTS, travelTimeToSh, distances);
+        transportVehicles, currentTask, thPrev, *lastSWTS, distances);
 
     // 6. Si no hay vehículo disponible, crear uno nuevo
     if (!selectedVehicle) {
@@ -86,7 +84,6 @@ TransportVehicle* TransportGreedyStrategy::ChooseVehicle(
     const Task& task,
     double thPrev,
     const Location& lastSWTS,
-    double travelTimeToSh,
     const std::vector<std::vector<double>>& distances) {
     TransportVehicle* bestVehicle = nullptr;
     double bestInsertionCost = std::numeric_limits<double>::infinity();

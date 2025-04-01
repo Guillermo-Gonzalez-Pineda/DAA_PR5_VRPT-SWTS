@@ -74,12 +74,12 @@ clean: CMakeFiles/RutaRecoleccion.dir/clean
 CMakeFiles/RutaRecoleccion.dir/all:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/depend
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target RutaRecoleccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target RutaRecoleccion"
 .PHONY : CMakeFiles/RutaRecoleccion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RutaRecoleccion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RutaRecoleccion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles 0
 .PHONY : CMakeFiles/RutaRecoleccion.dir/rule
