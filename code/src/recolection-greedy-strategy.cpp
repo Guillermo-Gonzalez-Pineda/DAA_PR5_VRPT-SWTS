@@ -85,7 +85,6 @@ std::vector<CollectionVehicle> RecolectionGreedyStrategy::computeRoutes(
           vehicle.resetLoad();
 
         } else {
-          // Si no se puede visitar la zona ni la SWTS, terminamos
           break;
         }
       }
