@@ -23,7 +23,7 @@ public:
     double getCurrentLoad() const { return currentLoad_; }
 
     // Métodos para manejar tareas
-    bool canAssignTask(double Dh, const SWTS& sh, double th, double thPrev, const Location& lastSWTS, double travelTimeToSh) const;
+    bool canAssignTask(double Dh, double th, double thPrev, const Location& lastSWTS, double travelTimeToSh) const;
     void assignTask(double Dh, const SWTS& sh, double travelTimeToSh);
     void returnToDumpsite();
     void addLocationToRoute(const std::shared_ptr<Location>& location);

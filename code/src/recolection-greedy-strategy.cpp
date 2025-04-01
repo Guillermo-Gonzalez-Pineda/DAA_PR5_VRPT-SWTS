@@ -33,7 +33,7 @@ std::vector<CollectionVehicle> RecolectionGreedyStrategy::computeRoutes(
       }
 
       // Calcular el tiempo necesario para visitar la zona, una SWTS y volver al depósito
-      double travelTimeToZone = minDistance / speed_;
+      double travelTimeToZone = (minDistance / speed_) + (closestZone->getProcessTime());
       std::shared_ptr<SWTS> nearestSWTS = nullptr;
       double minSWTSDistance = std::numeric_limits<double>::max();
 

@@ -22,12 +22,12 @@
 class CollectionZone : public Location {
   public:
     // Constructor
-    CollectionZone(int id, double x, double y, double D1, double D2) : Location(x, y, id), demand_(D2 - D1) {}
-    CollectionZone(int id, double x, double y, double demand) : Location(x, y, id), demand_(demand) {}
+    CollectionZone(int id, double x, double y, double D1, double D2) : Location(x, y, id), processTime_(D1), demand_(D2) {}
 
     // Métodos getter
     int getId() const { return Location::getId(); }
     double getDemand() const { return demand_; }
+    double getProcessTime() const { return processTime_; }
 
     // Sobrecarga del operador ==
     bool operator==(const CollectionZone& other) const {
@@ -35,7 +35,8 @@ class CollectionZone : public Location {
     }
 
   private:
-    double demand_;  // Demanda calculada (D2 - D1)
+    double processTime_;
+    double demand_;  // Demanda calculada
 };
 
 #endif

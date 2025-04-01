@@ -3,7 +3,8 @@
 // Constructor
 TransportVehicle::TransportVehicle(int id, double capacity, double maxRouteTime, 
                                    const std::shared_ptr<Location>& dumpsite)
-    : id_(id), capacity_(capacity), maxRouteTime_(maxRouteTime), currentLoad_(0), currentTime_(0), dumpsite_(dumpsite), tasks_(), route_() {}
+    : id_(id), capacity_(capacity), maxRouteTime_(maxRouteTime), currentLoad_(0), 
+      currentTime_(0), route_(), tasks_(), dumpsite_(dumpsite) {}
 
 // Método para agregar una ubicación a la ruta
 void TransportVehicle::addLocationToRoute(const std::shared_ptr<Location>& location) {
@@ -11,7 +12,7 @@ void TransportVehicle::addLocationToRoute(const std::shared_ptr<Location>& locat
 }
 
 // Método para verificar si se puede asignar una tarea de transporte
-bool TransportVehicle::canAssignTask(double Dh, const SWTS& sh, double th, double thPrev, const Location& lastSWTS, double travelTimeToSh) const {
+bool TransportVehicle::canAssignTask(double Dh, double th, double thPrev, const Location& lastSWTS, double travelTimeToSh) const {
   // (a) Restricción de tiempo de viaje entre SWTS
   if (!route_.empty() && travelTimeToSh > (th - thPrev)) {
     return false;
