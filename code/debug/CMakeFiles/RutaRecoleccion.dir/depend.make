@@ -7,13 +7,28 @@ CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o: ../include/location.h
 CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o: ../include/solid-waste-transfer-station.h
 CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o: ../src/data-parser.cpp
 
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/collection-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/collection-zone.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/data-parser.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/instance-processor.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/location.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/recolection-greedy-strategy.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/report-generator.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/solid-waste-transfer-station.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/task.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/transport-greedy-strategy.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../include/transport-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../src/instance-processor.cpp
+
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/collection-vehicle.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/collection-zone.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/data-parser.h
+CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/instance-processor.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/location.h
-CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/recolection-grasp-strategy.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/recolection-greedy-strategy.h
+CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/report-generator.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/solid-waste-transfer-station.h
+CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/summary-generator.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/task.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/transport-greedy-strategy.h
 CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o: ../include/transport-vehicle.h
@@ -34,6 +49,27 @@ CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o: ../include
 CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o: ../include/solid-waste-transfer-station.h
 CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o: ../include/task.h
 CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o: ../src/recolection-greedy-strategy.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/collection-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/collection-zone.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/location.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/report-generator.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/solid-waste-transfer-station.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/task.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../include/transport-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../src/report-generator.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/collection-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/collection-zone.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/data-parser.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/location.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/recolection-greedy-strategy.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/solid-waste-transfer-station.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/summary-generator.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/task.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/transport-greedy-strategy.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../include/transport-vehicle.h
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../src/summary-generator.cpp
 
 CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o: ../include/collection-vehicle.h
 CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o: ../include/collection-zone.h

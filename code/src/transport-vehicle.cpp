@@ -34,9 +34,9 @@ bool TransportVehicle::canAssignTask(double Dh, double th, double thPrev, const 
 
 // Asigna una tarea al vehículo
 void TransportVehicle::assignTask(double Dh, const SWTS& sh, double travelTimeToSh) {
-    // Actualizar carga y tiempo
-    currentLoad_ += Dh;
-    currentTime_ += travelTimeToSh;
+    // Usar los métodos encapsulados para añadir carga y tiempo
+    addLoad(Dh);
+    addTime(travelTimeToSh);
 
     // Agregar la SWTS a la ruta
     auto swtsPtr = std::make_shared<SWTS>(sh);
@@ -51,11 +51,22 @@ void TransportVehicle::resetLoad() {
   currentLoad_ = 0.0;
 }
 
-
 // Programa un viaje al vertedero
 void TransportVehicle::returnToDumpsite() {
   if (route_.empty() || *route_.back() != *dumpsite_) {
     addLocationToRoute(dumpsite_);
   }
   resetLoad(); // Descargar residuos en el vertedero
+}
+
+// Método privado para añadir carga
+void TransportVehicle::addLoad(double load) {
+  currentLoad_ += load;
+  totalLoad_ += load; // Acumular la carga total
+}
+
+// Método privado para añadir tiempo
+void TransportVehicle::addTime(double time) {
+  currentTime_ += time;
+  totalTime_ += time; // Acumular el tiempo total
 }

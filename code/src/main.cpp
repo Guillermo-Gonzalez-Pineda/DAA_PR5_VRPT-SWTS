@@ -1,107 +1,47 @@
 #include <iostream>
-#include <fstream>
-#include "../include/data-parser.h"
-#include "../include/recolection-greedy-strategy.h"
-#include "../include/recolection-grasp-strategy.h"
-#include "../include/transport-greedy-strategy.h"
+#include <vector>
+#include "../include/instance-processor.h"
+#include "../include/summary-generator.h"
 
-void printRoute(const std::vector<std::shared_ptr<Location>>& route) {
-    for (const auto& location : route) {
-        std::string locationType;
-        int id = location->getId();
-        if (id == 0) {
-            locationType = "Depot";
-        } else if (id == 21) {
-            locationType = "IF";
-        } else if (id == 22) {
-            locationType = "IF1";
-        } else if (id == 23) {
-            locationType = "Dumpsite";
-        } else {
-            locationType = "Zone" + std::to_string(id);
+int main() {
+    int option;
+    std::cout << "Seleccione una opción:\n";
+    std::cout << "1. Procesar un archivo de instancia\n";
+    std::cout << "2. Generar resumen de resultados\n";
+    std::cout << "3. Generar tablas para todas las instancias\n";
+    std::cin >> option;
+
+    if (option == 1) {
+        std::string inputFile, outputFile;
+        std::cout << "Ingrese el nombre del archivo de instancia: ";
+        std::cin >> inputFile;
+        std::cout << "Ingrese el nombre del archivo de salida: ";
+        std::cin >> outputFile;
+
+        InstanceProcessor processor("../../data/" + inputFile, "../../results/" + outputFile);
+        processor.process();
+    } else if (option == 2) {
+        std::vector<std::string> instanceFiles;
+        for (int i = 1; i <= 20; ++i) {
+            instanceFiles.push_back("../../data/instance" + std::to_string(i) + ".txt");
         }
-        std::cout << "\t" << locationType << " (" << location->getX() << ", " << location->getY() << ")" << std::endl;
-    }
-}
-
-int main(int argc, char* argv[]) {
-    if (argc != 2) {
-        std::cerr << "Uso: " << argv[0] << " <archivo_de_entrada>" << std::endl;
-        return 1;
-    }
-
-    std::string inputFile = argv[1];
-
-    try {
-        // Parsear el archivo de entrada
-        DataParser parser(inputFile);
-
-        // Obtener los datos necesarios
-        auto collectionZones = parser.getCollectionZones();
-        auto collectionZonesGRASP = collectionZones;
-        auto transferStations = parser.getTransferStations();
-        auto depot = parser.getDepot();
-        auto dumpsite = parser.getDumpsite();
-        auto distances = parser.getDistances();
-        double collectionVehicleCapacity = parser.getCollectionVehicleCapacity();
-        double transportVehicleCapacity = parser.getTransportVehicleCapacity();
-        double maxCollectionRouteTime = parser.getMaxCollectionRouteTime();
-        double maxTransportRouteTime = parser.getMaxTransportationRouteTime();
-        double speed = parser.getSpeed();
-
-        // Crear la estrategia greedy para recolección
-        RecolectionGreedyStrategy recolectionGreedy(collectionVehicleCapacity, maxCollectionRouteTime, speed);
-
-        // Ejecutar el algoritmo de recolección voraz
-        auto collectionVehiclesGreedy = recolectionGreedy.computeRoutes(collectionZones, transferStations, depot, distances);
-
-        // Mostrar los resultados de recolección voraz
-        std::cout << "=== Recolección (Voraz) ===" << std::endl;
-        for (const auto& vehicle : collectionVehiclesGreedy) {
-            std::cout << "Vehículo " << vehicle.getId() << ":" << std::endl;
-            printRoute(vehicle.getRoute());
+        SummaryGenerator summary("../../results/summary.txt", instanceFiles);
+        summary.generate();
+    } else if (option == 3) {
+        std::vector<std::string> instanceFiles;
+        for (int i = 1; i <= 20; ++i) {
+            instanceFiles.push_back("../../data/instance" + std::to_string(i) + ".txt");
         }
+        for (const auto& instanceFile : instanceFiles) {
+            // Generar un nombre de archivo de salida basado en el nombre de la instancia
+            std::string outputFile = "../../results/" + instanceFile.substr(instanceFile.find_last_of("/") + 1);
+            outputFile.replace(outputFile.find(".txt"), 4, "_result.txt");
 
-        // Crear la estrategia greedy para transporte
-        TransportGreedyStrategy transportGreedy(transportVehicleCapacity, maxTransportRouteTime, speed);
-
-        // Ejecutar el algoritmo de transporte voraz
-        auto transportVehiclesGreedy = transportGreedy.computeTransportRoutes(collectionVehiclesGreedy, dumpsite, distances);
-
-        // Mostrar los resultados de transporte voraz
-        std::cout << "\n=== Transporte (Voraz) ===" << std::endl;
-        for (const auto& vehicle : transportVehiclesGreedy) {
-            std::cout << "Vehículo " << vehicle->getId() << ":" << std::endl;
-            printRoute(vehicle->getRoute());
+            InstanceProcessor processor(instanceFile, outputFile);
+            processor.process();
         }
-
-        // Crear la estrategia GRASP para recolección
-        double alpha = 0.5; // Parámetro alpha para la RCL
-        RecolectionGRASPStrategy recolectionGRASP(collectionVehicleCapacity, maxCollectionRouteTime, speed, alpha);
-
-        // Ejecutar el algoritmo de recolección GRASP
-        auto collectionVehiclesGRASP = recolectionGRASP.computeRoutes(collectionZonesGRASP, transferStations, depot, distances);
-
-        // Mostrar los resultados de recolección GRASP
-        std::cout << "\n=== Recolección (GRASP) ===" << std::endl;
-        for (const auto& vehicle : collectionVehiclesGRASP) {
-            std::cout << "Vehículo " << vehicle.getId() << ":" << std::endl;
-            printRoute(vehicle.getRoute());
-        }
-
-        // Ejecutar el algoritmo de transporte voraz con las rutas de recolección GRASP
-        auto transportVehiclesGRASP = transportGreedy.computeTransportRoutes(collectionVehiclesGRASP, dumpsite, distances);
-
-        // Mostrar los resultados de transporte voraz con recolección GRASP
-        std::cout << "\n=== Transporte (Voraz con Recolección GRASP) ===" << std::endl;
-        for (const auto& vehicle : transportVehiclesGRASP) {
-            std::cout << "Vehículo " << vehicle->getId() << ":" << std::endl;
-            printRoute(vehicle->getRoute());
-        }
-
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
-        return 1;
+    } else {
+        std::cerr << "Opción no válida.\n";
     }
 
     return 0;

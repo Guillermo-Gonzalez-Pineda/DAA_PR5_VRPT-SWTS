@@ -9,9 +9,9 @@
 
 class RecolectionGRASPStrategy {
 public:
-  // Constructor con parámetros para capacidad, tiempo máximo de ruta, velocidad y parámetro alpha para la RCL
-  RecolectionGRASPStrategy(double vehicleCapacity, double maxRouteTime, double speed, double alpha)
-    : vehicleCapacity_(vehicleCapacity), maxRouteTime_(maxRouteTime), speed_(speed), alpha_(alpha) {}
+  // Constructor con parámetros para capacidad, tiempo máximo de ruta, velocidad y tamaño del LRC
+  RecolectionGRASPStrategy(double vehicleCapacity, double maxRouteTime, double speed, int lrcSize)
+    : vehicleCapacity_(vehicleCapacity), maxRouteTime_(maxRouteTime), speed_(speed), lrcSize_(lrcSize) {}
 
   // Método que calcula las rutas para los vehículos de recolección
   std::vector<CollectionVehicle> computeRoutes(
@@ -25,7 +25,7 @@ private:
   double vehicleCapacity_;  // Capacidad máxima del vehículo
   double maxRouteTime_;     // Tiempo máximo permitido para la ruta
   double speed_;            // Velocidad del vehículo
-  double alpha_;            // Parámetro para la RCL en GRASP (entre 0 y 1)
+  int lrcSize_;             // Tamaño fijo de la Lista Restringida de Candidatos (LRC)
 };
 
 #endif

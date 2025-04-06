@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o"
+  "CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o"
   "CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o"
   "CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o"
   "CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o"
+  "CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o"
+  "CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o"
   "CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o"
   "CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o"
   "RutaRecoleccion"

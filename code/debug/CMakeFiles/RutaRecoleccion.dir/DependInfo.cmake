@@ -5,9 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/data-parser.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.o"
+  "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/instance-processor.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o"
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/main.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o"
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o"
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-greedy-strategy.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o"
+  "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/report-generator.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o"
+  "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/summary-generator.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o"
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-greedy-strategy.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o"
   "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/transport-vehicle.cpp" "/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o"
   )

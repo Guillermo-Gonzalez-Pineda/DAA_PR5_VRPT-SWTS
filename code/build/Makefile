@@ -231,6 +231,33 @@ src/recolection-greedy-strategy.cpp.s:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s
 .PHONY : src/recolection-greedy-strategy.cpp.s
 
+src/report-generator.o: src/report-generator.cpp.o
+
+.PHONY : src/report-generator.o
+
+# target to build an object file
+src/report-generator.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o
+.PHONY : src/report-generator.cpp.o
+
+src/report-generator.i: src/report-generator.cpp.i
+
+.PHONY : src/report-generator.i
+
+# target to preprocess a source file
+src/report-generator.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.i
+.PHONY : src/report-generator.cpp.i
+
+src/report-generator.s: src/report-generator.cpp.s
+
+.PHONY : src/report-generator.s
+
+# target to generate assembly for a file
+src/report-generator.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.s
+.PHONY : src/report-generator.cpp.s
+
 src/transport-greedy-strategy.o: src/transport-greedy-strategy.cpp.o
 
 .PHONY : src/transport-greedy-strategy.o
@@ -306,6 +333,9 @@ help:
 	@echo "... src/recolection-greedy-strategy.o"
 	@echo "... src/recolection-greedy-strategy.i"
 	@echo "... src/recolection-greedy-strategy.s"
+	@echo "... src/report-generator.o"
+	@echo "... src/report-generator.i"
+	@echo "... src/report-generator.s"
 	@echo "... src/transport-greedy-strategy.o"
 	@echo "... src/transport-greedy-strategy.i"
 	@echo "... src/transport-greedy-strategy.s"

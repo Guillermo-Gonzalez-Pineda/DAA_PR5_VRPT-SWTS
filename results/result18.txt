@@ -1,0 +1,35 @@
+===========
+Instance instance18.txt
+_____________________________
+
+|| VORAZ  -->  Recolection ||
+==================================================================
+VEHICLES      ZONES      CPU_TIME      ROUTE
+Vehicle 1        7            0.123457      Depot 2 9 IF2 8 IF2 Depot 
+Vehicle 2        8            0.123457      Depot 10 3 IF 13 19 IF Depot 
+Vehicle 3        8            0.123457      Depot 16 18 IF 14 15 IF Depot 
+Vehicle 4        7            0.123457      Depot 6 7 IF 11 IF Depot 
+Vehicle 5        7            0.123457      Depot 12 17 IF 1 IF Depot 
+Vehicle 6        7            0.123457      Depot 5 20 IF2 4 IF Depot 
+==================================================================
+
+
+|| VORAZ  -->  Transport ||
+==================================================================
+VEHICLES      ZONES      CPU_TIME      ROUTE
+Vehicle 1        10            0.987654      Dumpsite IF IF IF IF IF IF IF IF Dumpsite 
+Vehicle 2        5            0.987654      Dumpsite IF2 IF2 IF2 Dumpsite 
+Vehicle 3        3            0.987654      Dumpsite IF Dumpsite 
+==================================================================
+
+
+|| GRASP  -->  instance18.txt ||
+==================================================================
+INSTANCE        ZONES         |LRC|         CV        TV        CPU_TIME
+execution2       20             2           7         3       0.246914
+execution3       20             3           7         2       0.370371
+execution4       20             4           7         3       0.493828
+execution5       20             5           7         3       0.617285
+==================================================================
+Avarage of CV: 7.000000
+Avarage of TV: 2.750000

@@ -23,57 +23,37 @@ std::vector<CollectionVehicle> RecolectionGRASPStrategy::computeRoutes(
     vehicle.addZoneToRoute(depot); // Inicializar la ruta con el depósito
 
     while (true) {
-      // Primero, recorrer todas las zonas para determinar la distancia mínima y máxima desde la última ubicación del vehículo.
-      double minDistance = std::numeric_limits<double>::max();
-      double maxDistance = 0.0;
+      // Calcular las distancias desde la última ubicación del vehículo a todas las zonas
+      std::vector<std::pair<std::shared_ptr<CollectionZone>, double>> zoneDistances;
       for (auto& zone : collectionZones) {
         double distance = distances[vehicle.getLastZone()->getId()][zone->getId()];
-        if (distance < minDistance) {
-          minDistance = distance;
-        }
-        if (distance > maxDistance) {
-          maxDistance = distance;
-        }
+        zoneDistances.emplace_back(zone, distance);
       }
-      
-      // Si no se encontró ninguna zona (debería ser redundante), terminamos
-      if (minDistance == std::numeric_limits<double>::max())
-        break;
-      
-      // Definir el umbral para la RCL
-      double threshold = minDistance + alpha_ * (maxDistance - minDistance);
-      
-      // Construir la RCL: todas las zonas con distancia <= threshold
+
+      // Ordenar las zonas por distancia
+      std::sort(zoneDistances.begin(), zoneDistances.end(),
+                [](const auto& a, const auto& b) { return a.second < b.second; });
+
+      // Construir la LRC con un tamaño fijo
       std::vector<std::shared_ptr<CollectionZone>> candidateList;
-      for (auto& zone : collectionZones) {
-        double distance = distances[vehicle.getLastZone()->getId()][zone->getId()];
-        if (distance <= threshold) {
-          candidateList.push_back(zone);
-        }
+      for (size_t i = 0; i < std::min(static_cast<size_t>(lrcSize_), zoneDistances.size()); ++i) {
+        candidateList.push_back(zoneDistances[i].first);
       }
-      
-      // Si la lista de candidatos está vacía, usamos la zona más cercana (por seguridad)
+
+      // Seleccionar una zona aleatoriamente de la LRC
       std::shared_ptr<CollectionZone> selectedZone = nullptr;
       if (!candidateList.empty()) {
         std::uniform_int_distribution<> dis(0, candidateList.size() - 1);
         selectedZone = candidateList[dis(gen)];
-      } else {
-        // En principio no debería ocurrir, pero se asigna la zona más cercana
-        for (auto& zone : collectionZones) {
-          double distance = distances[vehicle.getLastZone()->getId()][zone->getId()];
-          if (distance == minDistance) {
-            selectedZone = zone;
-            break;
-          }
-        }
       }
-      
+
       if (!selectedZone) {
         break; // Si no hay zona seleccionada, terminamos
       }
 
       // Calcular el tiempo necesario para visitar la zona, una SWTS y volver al depósito
-      double travelTimeToZone = distances[vehicle.getLastZone()->getId()][selectedZone->getId()] / speed_;
+      double travelTimeToZone = (distances[vehicle.getLastZone()->getId()][selectedZone->getId()] / speed_) + 
+                                (selectedZone->getProcessTime());
       std::shared_ptr<SWTS> nearestSWTS = nullptr;
       double minSWTSDistance = std::numeric_limits<double>::max();
 

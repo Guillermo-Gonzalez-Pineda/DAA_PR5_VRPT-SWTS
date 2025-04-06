@@ -39,6 +39,12 @@ private:
     std::shared_ptr<Location> dumpsite_;          // Ubicación del vertedero
     std::vector<Task> tasks_;                     // Lista de tareas generadas
     double speed_ = 1.0;                          // Velocidad del vehículo (km/s)
+    double totalLoad_ = 0.0;                      // Carga total transportada
+    double totalTime_ = 0.0;                      // Tiempo total de la ruta
+
+    // Métodos privados para encapsular la lógica de añadir carga y tiempo
+    void addLoad(double load);
+    void addTime(double time);
 };
 
 #endif // TRANSPORT_VEHICLE_H

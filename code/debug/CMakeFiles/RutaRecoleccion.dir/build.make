@@ -135,6 +135,45 @@ CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp -o CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.s
 
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o: ../src/report-generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/report-generator.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/report-generator.cpp > CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/report-generator.cpp -o CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.s
+
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o: ../src/instance-processor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/instance-processor.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/instance-processor.cpp > CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/instance-processor.cpp -o CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.s
+
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: CMakeFiles/RutaRecoleccion.dir/flags.make
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o: ../src/summary-generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o -c /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/summary-generator.cpp
+
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/summary-generator.cpp > CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.i
+
+CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/summary-generator.cpp -o CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.s
+
 # Object files for target RutaRecoleccion
 RutaRecoleccion_OBJECTS = \
 "CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o" \
@@ -142,7 +181,10 @@ RutaRecoleccion_OBJECTS = \
 "CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o" \
 "CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o" \
 "CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o" \
-"CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o"
+"CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o" \
+"CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o"
 
 # External object files for target RutaRecoleccion
 RutaRecoleccion_EXTERNAL_OBJECTS =
@@ -153,9 +195,12 @@ RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o
+RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/build.make
 RutaRecoleccion: CMakeFiles/RutaRecoleccion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RutaRecoleccion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RutaRecoleccion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RutaRecoleccion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

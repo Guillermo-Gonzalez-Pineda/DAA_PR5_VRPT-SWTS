@@ -150,6 +150,33 @@ src/data-parser.cpp.s:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/data-parser.cpp.s
 .PHONY : src/data-parser.cpp.s
 
+src/instance-processor.o: src/instance-processor.cpp.o
+
+.PHONY : src/instance-processor.o
+
+# target to build an object file
+src/instance-processor.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o
+.PHONY : src/instance-processor.cpp.o
+
+src/instance-processor.i: src/instance-processor.cpp.i
+
+.PHONY : src/instance-processor.i
+
+# target to preprocess a source file
+src/instance-processor.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.i
+.PHONY : src/instance-processor.cpp.i
+
+src/instance-processor.s: src/instance-processor.cpp.s
+
+.PHONY : src/instance-processor.s
+
+# target to generate assembly for a file
+src/instance-processor.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.s
+.PHONY : src/instance-processor.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -231,6 +258,60 @@ src/recolection-greedy-strategy.cpp.s:
 	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.s
 .PHONY : src/recolection-greedy-strategy.cpp.s
 
+src/report-generator.o: src/report-generator.cpp.o
+
+.PHONY : src/report-generator.o
+
+# target to build an object file
+src/report-generator.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o
+.PHONY : src/report-generator.cpp.o
+
+src/report-generator.i: src/report-generator.cpp.i
+
+.PHONY : src/report-generator.i
+
+# target to preprocess a source file
+src/report-generator.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.i
+.PHONY : src/report-generator.cpp.i
+
+src/report-generator.s: src/report-generator.cpp.s
+
+.PHONY : src/report-generator.s
+
+# target to generate assembly for a file
+src/report-generator.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.s
+.PHONY : src/report-generator.cpp.s
+
+src/summary-generator.o: src/summary-generator.cpp.o
+
+.PHONY : src/summary-generator.o
+
+# target to build an object file
+src/summary-generator.cpp.o:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o
+.PHONY : src/summary-generator.cpp.o
+
+src/summary-generator.i: src/summary-generator.cpp.i
+
+.PHONY : src/summary-generator.i
+
+# target to preprocess a source file
+src/summary-generator.cpp.i:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.i
+.PHONY : src/summary-generator.cpp.i
+
+src/summary-generator.s: src/summary-generator.cpp.s
+
+.PHONY : src/summary-generator.s
+
+# target to generate assembly for a file
+src/summary-generator.cpp.s:
+	$(MAKE) -f CMakeFiles/RutaRecoleccion.dir/build.make CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.s
+.PHONY : src/summary-generator.cpp.s
+
 src/transport-greedy-strategy.o: src/transport-greedy-strategy.cpp.o
 
 .PHONY : src/transport-greedy-strategy.o
@@ -297,6 +378,9 @@ help:
 	@echo "... src/data-parser.o"
 	@echo "... src/data-parser.i"
 	@echo "... src/data-parser.s"
+	@echo "... src/instance-processor.o"
+	@echo "... src/instance-processor.i"
+	@echo "... src/instance-processor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -306,6 +390,12 @@ help:
 	@echo "... src/recolection-greedy-strategy.o"
 	@echo "... src/recolection-greedy-strategy.i"
 	@echo "... src/recolection-greedy-strategy.s"
+	@echo "... src/report-generator.o"
+	@echo "... src/report-generator.i"
+	@echo "... src/report-generator.s"
+	@echo "... src/summary-generator.o"
+	@echo "... src/summary-generator.i"
+	@echo "... src/summary-generator.s"
 	@echo "... src/transport-greedy-strategy.o"
 	@echo "... src/transport-greedy-strategy.i"
 	@echo "... src/transport-greedy-strategy.s"

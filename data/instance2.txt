@@ -1,5 +1,5 @@
-L1 120
-L2 300
+L1 480
+L2 480
 num_vehicles 12
 num_zones 20
 Lx 20

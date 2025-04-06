@@ -50,18 +50,6 @@ utility
 string
 -
 
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-grasp-strategy.h
-vector
--
-memory
--
-collection-vehicle.h
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-vehicle.h
-collection-zone.h
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
-solid-waste-transfer-station.h
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
-
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
 vector
 -
@@ -81,6 +69,16 @@ location.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
 collection-zone.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
+
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/summary-generator.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
 
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
 solid-waste-transfer-station.h
@@ -114,17 +112,19 @@ task.h
 solid-waste-transfer-station.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
 
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/main.cpp
-iostream
--
-fstream
--
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/summary-generator.cpp
+../include/summary-generator.h
+/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/summary-generator.h
 ../include/data-parser.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/data-parser.h
 ../include/recolection-greedy-strategy.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
-../include/recolection-grasp-strategy.h
-/home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-grasp-strategy.h
 ../include/transport-greedy-strategy.h
 /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/transport-greedy-strategy.h
+fstream
+-
+iomanip
+-
+chrono
+-
 
