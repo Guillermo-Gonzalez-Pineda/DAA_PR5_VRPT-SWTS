@@ -13,8 +13,10 @@ CMakeFiles/RutaRecoleccion.dir/src/instance-processor.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/data-parser.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/instance-processor.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-grasp-strategy.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/report-generator.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/transport-greedy-strategy.h
@@ -26,8 +28,10 @@ CMakeFiles/RutaRecoleccion.dir/src/main.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/data-parser.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/instance-processor.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-grasp-strategy.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/report-generator.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/summary-generator.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
@@ -39,6 +43,7 @@ CMakeFiles/RutaRecoleccion.dir/src/recolection-grasp-strategy.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-grasp-strategy.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-grasp-strategy.cpp
@@ -47,6 +52,7 @@ CMakeFiles/RutaRecoleccion.dir/src/recolection-greedy-strategy.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/src/recolection-greedy-strategy.cpp
@@ -55,6 +61,7 @@ CMakeFiles/RutaRecoleccion.dir/src/report-generator.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/report-generator.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/transport-vehicle.h
@@ -65,6 +72,7 @@ CMakeFiles/RutaRecoleccion.dir/src/summary-generator.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/data-parser.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/recolection-greedy-strategy.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/summary-generator.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
@@ -75,6 +83,7 @@ CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-vehicle.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/transport-greedy-strategy.h
@@ -83,6 +92,7 @@ CMakeFiles/RutaRecoleccion.dir/src/transport-greedy-strategy.cpp.o
 CMakeFiles/RutaRecoleccion.dir/src/transport-vehicle.cpp.o
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/collection-zone.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/location.h
+ /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/route.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/solid-waste-transfer-station.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/task.h
  /home/guillermo/DAA/DAA_PR5_VRPT-SWTS/code/include/transport-vehicle.h

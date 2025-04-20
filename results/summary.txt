@@ -5,26 +5,26 @@ Resumen Resultados Instancias
 || VORAZ ||
 ==================================================================
 INSTANCE        ZONES         CV        TV        CPU_TIME
-../../data/instance1.txt       20            6          2       106.000000
-../../data/instance2.txt       20            6          2       93.000000
-../../data/instance3.txt       20            6          2       96.000000
-../../data/instance4.txt       20            6          2       111.000000
-../../data/instance5.txt       20            6          2       90.000000
-../../data/instance6.txt       20            6          2       94.000000
-../../data/instance7.txt       20            6          2       90.000000
-../../data/instance8.txt       20            6          2       90.000000
-../../data/instance9.txt       20            6          2       89.000000
-../../data/instance10.txt       20            6          2       93.000000
-../../data/instance11.txt       20            6          2       92.000000
-../../data/instance12.txt       20            6          2       92.000000
-../../data/instance13.txt       20            6          2       91.000000
-../../data/instance14.txt       20            6          2       91.000000
-../../data/instance15.txt       20            6          2       91.000000
-../../data/instance16.txt       20            6          2       89.000000
-../../data/instance17.txt       20            7          2       99.000000
-../../data/instance18.txt       20            6          3       94.000000
-../../data/instance19.txt       20            6          2       89.000000
-../../data/instance20.txt       20            6          2       95.000000
+../../data/instance1.txt       20            6          0       110.000000
+../../data/instance2.txt       20            6          0       91.000000
+../../data/instance3.txt       20            6          0       91.000000
+../../data/instance4.txt       20            6          0       89.000000
+../../data/instance5.txt       20            6          0       103.000000
+../../data/instance6.txt       20            6          0       94.000000
+../../data/instance7.txt       20            6          0       97.000000
+../../data/instance8.txt       20            6          0       87.000000
+../../data/instance9.txt       20            6          0       88.000000
+../../data/instance10.txt       20            6          0       118.000000
+../../data/instance11.txt       20            6          0       101.000000
+../../data/instance12.txt       20            6          0       96.000000
+../../data/instance13.txt       20            6          0       95.000000
+../../data/instance14.txt       20            6          0       88.000000
+../../data/instance15.txt       20            6          0       89.000000
+../../data/instance16.txt       20            6          0       87.000000
+../../data/instance17.txt       20            7          0       95.000000
+../../data/instance18.txt       20            6          0       88.000000
+../../data/instance19.txt       20            6          0       86.000000
+../../data/instance20.txt       20            6          0       89.000000
 ==================================================================
 Avarage of CV: 6.050000
-Avarage of TV: 2.050000
+Avarage of TV: 0.000000

@@ -5,6 +5,7 @@
 #include <iostream>
 #include "../include/data-parser.h"
 #include "../include/recolection-greedy-strategy.h"
+#include "../include/recolection-grasp-strategy.h"
 #include "../include/transport-greedy-strategy.h"
 #include "../include/report-generator.h"
 

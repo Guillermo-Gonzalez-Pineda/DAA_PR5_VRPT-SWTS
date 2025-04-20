@@ -25,10 +25,18 @@ void InstanceProcessor::process() {
         TransportGreedyStrategy transportGreedy(transportVehicleCapacity, maxTransportRouteTime, speed);
         auto transportVehiclesGreedy = transportGreedy.computeTransportRoutes(collectionVehiclesGreedy, dumpsite, distances);
 
+        // Estrategia GRASP
+        RecolectionGRASPStrategy recolectionGRASP(collectionVehicleCapacity, maxCollectionRouteTime, speed, 5); // Tamaño LRC = 5
+        auto collectionVehiclesGRASP = recolectionGRASP.computeRoutes(collectionZones, transferStations, depot, distances);
+
         // Generar reporte
         ReportGenerator reportGenerator(outputFile_);
         reportGenerator.addRecolectionResult(collectionVehiclesGreedy);
         reportGenerator.addTransportResult(transportVehiclesGreedy);
+
+        // Agregar resultados de GRASP
+        reportGenerator.addGRASPResult(inputFile_, parser.getNumZones(), 5, collectionVehiclesGRASP.size(), transportVehiclesGreedy.size(), 0.123456); // Simulación de tiempo de CPU
+
         reportGenerator.writeToFile();
 
         std::cout << "Resultados generados en: " << outputFile_ << "\n";

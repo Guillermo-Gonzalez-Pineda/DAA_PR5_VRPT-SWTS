@@ -2,6 +2,8 @@
 #define TASK_H
 
 #include "solid-waste-transfer-station.h"
+#include "collection-zone.h"
+#include "route.h"
 #include <memory>
 
 class Task {
@@ -11,7 +13,9 @@ class Task {
     // Métodos getters
     double getWasteAmount() const { return wasteAmount_; }
     const SWTS& getSWTS() const { return *swts_; }
-    double getTh() const { return arrivalTime_; }
+    double getArrivalTime() const { return arrivalTime_; }
+    const std::vector<Route>& getSubRoutes() const { return subRoutes_; }
+    void addSubRoute(const Route& route) { subRoutes_.push_back(route); }
 
     // Sobrecarga del operador <
     bool operator<(const Task& other) const {
@@ -22,6 +26,7 @@ class Task {
     double wasteAmount_; // Cantidad de residuos transportados
     const SWTS* swts_;   // Estación de transferencia de residuos
     double arrivalTime_; // Tiempo de llegada de los residuos
+    std::vector<Route> subRoutes_; // Subrutas asociadas a la tarea
 };
 
 #endif

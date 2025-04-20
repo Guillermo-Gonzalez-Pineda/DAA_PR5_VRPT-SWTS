@@ -22,6 +22,8 @@ std::vector<CollectionVehicle> RecolectionGRASPStrategy::computeRoutes(
     CollectionVehicle vehicle(vehicleId++, vehicleCapacity_, maxRouteTime_);
     vehicle.addZoneToRoute(depot); // Inicializar la ruta con el depósito
 
+    Route currentSubroute;
+
     while (true) {
       // Calcular las distancias desde la última ubicación del vehículo a todas las zonas
       std::vector<std::pair<std::shared_ptr<CollectionZone>, double>> zoneDistances;
@@ -77,6 +79,7 @@ std::vector<CollectionVehicle> RecolectionGRASPStrategy::computeRoutes(
       // Verificar si la zona puede ser asignada al vehículo
       if (selectedZone->getDemand() <= vehicle.getRemainingLoad() && totalTime <= vehicle.getRemainingTime()) {
         // Agregar la zona a la ruta
+        currentSubroute.addZone(selectedZone);
         vehicle.addZoneToRoute(selectedZone);
         vehicle.addLoad(selectedZone->getDemand());
         vehicle.addTime(travelTimeToZone);
@@ -102,7 +105,16 @@ std::vector<CollectionVehicle> RecolectionGRASPStrategy::computeRoutes(
           travelTimeToSWTS = minSWTSDistance / speed_;
           vehicle.addZoneToRoute(nearestSWTS);
           vehicle.addTime(travelTimeToSWTS);
+          double subRouteDemand = vehicle.getTotalLoad();
+          double subRouteTime = vehicle.getTotalTime();
           vehicle.resetLoad();
+
+
+          Task newTask(subRouteDemand, nearestSWTS, subRouteTime);
+          newTask.addSubRoute(currentSubroute);
+          vehicle.addTask(newTask);
+          
+          currentSubroute = Route(); // Reiniciar la subruta
 
         } else {
           // Si no se puede visitar la zona ni la SWTS, terminamos la ruta
@@ -134,6 +146,8 @@ std::vector<CollectionVehicle> RecolectionGRASPStrategy::computeRoutes(
         }
         if (nearestSWTS) {
           vehicle.addZoneToRoute(nearestSWTS);
+
+        
         }
       }
     }

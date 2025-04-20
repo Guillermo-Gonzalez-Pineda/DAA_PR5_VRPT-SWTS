@@ -19,7 +19,7 @@ std::vector<TransportVehicle*> TransportGreedyStrategy::computeTransportRoutes(
 
   // Ordenar las tareas por tiempo de llegada
   std::sort(tasks.begin(), tasks.end(), [](const Task& a, const Task& b) {
-    return a.getTh() < b.getTh();
+    return a.getArrivalTime() < b.getArrivalTime();
   });
 
   // Calcular la cantidad mínima de residuos a transportar
@@ -64,7 +64,7 @@ std::vector<TransportVehicle*> TransportGreedyStrategy::computeTransportRoutes(
     }
 
     // Actualizar el tiempo de la tarea anterior
-    thPrev = currentTask.getTh();
+    thPrev = currentTask.getArrivalTime();
     lastSWTS = std::make_shared<Location>(currentTask.getSWTS());
   }
 
@@ -94,7 +94,7 @@ TransportVehicle* TransportGreedyStrategy::ChooseVehicle(
     double computedTravelTime = distances[vehicle->getLastLocation()->getId()][task.getSWTS().getId()] / speed_;
 
     // Verificar que el vehículo cumple las restricciones usando el objeto Task
-    if (vehicle->canAssignTask(task.getWasteAmount(), task.getTh(), thPrev, lastSWTS, computedTravelTime)) {
+    if (vehicle->canAssignTask(task.getWasteAmount(), task.getArrivalTime(), thPrev, lastSWTS, computedTravelTime)) {
       // Usamos el tiempo de viaje como costo de inserción
       if (computedTravelTime < bestInsertionCost) {
         bestInsertionCost = computedTravelTime;

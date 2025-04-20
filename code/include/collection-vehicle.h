@@ -39,19 +39,18 @@ class CollectionVehicle {
       remainingCapacity_ -= load; 
       totalLoad_ += load;
     }
+
     void addTime(double time) { 
       this->remainingTime_ -= time; 
       totalTime_ += time;
     }
 
+    void addTask(const Task& task) {
+      tasks_.push_back(task);
+    }
+
     // Métodos para agregar zonas a la ruta, ir a la estación de transferencia, etc.
     void addZoneToRoute(const std::shared_ptr<Location>& zone) {
-      // Supongamos que `swts` es un std::shared_ptr<SWTS> asociado a la zona
-      auto swts = std::dynamic_pointer_cast<SWTS>(zone);
-      if (swts) {
-        Task task(capacity - remainingCapacity_, swts, maxTime - remainingTime_);
-        tasks_.push_back(task);
-      }
       route_.push_back(zone);
     }
 
